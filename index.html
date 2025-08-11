@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sai Prasad Paladugu — Software Engineer</title>
+  <meta name="description" content="Portfolio of Sai Prasad Paladugu — Software Engineer specializing in backend, cloud, and distributed systems."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrapper">
+      <nav class="nav">
+        <a class="brand" href="#top">SP</a>
+        <div class="links">
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+      <section class="hero" id="top">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Sai Prasad Paladugu</span>.</h1>
+          <p class="subtitle">Software Engineer focused on backend systems, cloud-native architectures, and high-scale microservices.</p>
+          <div class="cta">
+            <a href="#contact" class="btn primary">Contact</a>
+            <a href="Sai_Prasad_Paladugu_Resume.pdf" class="btn" target="_blank" rel="noreferrer">Resume</a>
+            <a href="https://www.linkedin.com/in/saiprasadpaladugu" class="btn" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main>
+    <section id="experience" class="section wrapper">
+      <h2>Experience</h2>
+
+      <article class="card">
+        <header>
+          <h3>Amazon — Software Engineer</h3>
+          <div class="meta">
+            <span>Oct 2022 — Present</span>
+            <span>Dallas, TX</span>
+          </div>
+        </header>
+        <ul>
+          <li>Redesigned DynamoDB access patterns: ~100x lower read capacity cost and ~65% faster queries.</li>
+          <li>Built high-throughput financial workflows in Java + Spring Boot; exposed GraphQL APIs for efficient fetching.</li>
+          <li>Designed REST APIs with API Gateway + Lambda; integrated Step Functions with strong test coverage.</li>
+          <li>Introduced Redis caching (ElastiCache), improving response times by ~70%.</li>
+          <li>Modeled network devices in Neptune, boosting related query speed by ~95%.</li>
+          <li>Led cross-team data integrity initiative: schema fixes, dataset cleanup, cold storage migration.</li>
+          <li>Automated infra with CDK; built CloudWatch observability, cutting time-to-detection significantly.</li>
+          <li>Built a case tracking dashboard in Angular for 50k+ active immigration/relocation cases.</li>
+          <li>Owned Spark/EMR + Airflow ETL pipelines for weekly terabyte-scale refreshes.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Prakya — Software Engineer</h3>
+          <div class="meta">
+            <span>May 2022 — Aug 2022</span>
+            <span>Remote</span>
+          </div>
+        </header>
+        <ul>
+          <li>Maintained CI/CD for build, test, deploy; accelerated release cycles by ~3x.</li>
+          <li>Built Bash/Python tooling to automate Docker builds and GitLab flows; +40% developer productivity.</li>
+          <li>Implemented BDD tests (Cucumber) and JUnit suites achieving 85%+ coverage.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <header>
+          <h3>Legato Health Technologies — Software Engineer</h3>
+          <div class="meta">
+            <span>Mar 2020 — Aug 2021</span>
+            <span>Bangalore, India</span>
+          </div>
+        </header>
+        <ul>
+          <li>Developed Spring Boot services processing sensitive health data for 100k+ users.</li>
+          <li>Migrated .NET/WPF legacy to microservices + REST; improved maintainability by ~60%.</li>
+          <li>Built ETL + dashboards for leadership insights.</li>
+          <li>Deployed on Kubernetes + PCF with blue/green and autoscaling policies.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="skills" class="section wrapper">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>Java, Kotlin, Python, C#, C/C++, SQL, Bash</p>
+        </div>
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <p>Spring Boot, Hibernate, Kafka, GraphQL, REST, Apache Camel</p>
+        </div>
+        <div class="skill-group">
+          <h4>Cloud & Infra</h4>
+          <p>AWS (Lambda, API Gateway, DynamoDB, SQS/SNS, Step Functions, CDK, EMR, EKS/ECS), Azure</p>
+        </div>
+        <div class="skill-group">
+          <h4>Datastores</h4>
+          <p>DynamoDB, PostgreSQL, MySQL, MongoDB, Redis, Neptune, Snowflake</p>
+        </div>
+        <div class="skill-group">
+          <h4>DevOps</h4>
+          <p>Docker, Kubernetes, Terraform, Jenkins, GitLab CI/CD</p>
+        </div>
+        <div class="skill-group">
+          <h4>Testing</h4>
+          <p>JUnit, Cucumber, Selenium, Cypress, Postman</p>
+        </div>
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <p>React, Angular, TypeScript, HTML/CSS</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrapper">
+      <h2>Selected Work</h2>
+      <div class="projects">
+        <article class="proj-card">
+          <h3>Case Management System</h3>
+          <p>Built a robust CMS with Angular + GraphQL/REST backed by AWS Lambda, API Gateway, and DynamoDB to support global immigration & relocation operations (50k+ active cases).</p>
+          <ul class="tags"><li>Angular</li><li>AWS</li><li>DynamoDB</li><li>GraphQL</li></ul>
+        </article>
+
+        <article class="proj-card">
+          <h3>Financial Workflow Orchestration</h3>
+          <p>Engineered Step Functions–based workflows in Java/Spring Boot with serverless integrations, enabling reliable, testable financial operations.</p>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Step Functions</li></ul>
+        </article>
+
+        <article class="proj-card">
+          <h3>Network Device Modeling</h3>
+          <p>Modeled complex device relationships in Amazon Neptune (graph) to achieve large-scale and faster lookups.</p>
+          <ul class="tags"><li>Neptune</li><li>Graph</li><li>AWS Lambda</li></ul>
+        </article>
+      </div>
+      <p class="note">Want to see more? <a href="mailto:saiprasadpaladugu@gmail.com">Email me</a> for a detailed walkthrough.</p>
+    </section>
+
+    <section id="contact" class="section wrapper">
+      <h2>Contact</h2>
+      <p>Open to backend, platform, and cloud roles. Best way to reach me:</p>
+      <ul class="contact">
+        <li>📧 <a href="mailto:saiprasadpaladugu@gmail.com">saiprasadpaladugu@gmail.com</a></li>
+        <li>📞 <a href="tel:+19407580946">+1 (940) 758-0946</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/saiprasadpaladugu" target="_blank" rel="noreferrer">linkedin.com/in/saiprasadpaladugu</a></li>
+        <li>📍 Dallas, TX</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper foot">
+      <p>© <span id="year"></span> Sai Prasad Paladugu</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
