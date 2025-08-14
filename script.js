@@ -1,12 +1,11 @@
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Theme toggle (persists to localStorage)
-const root = document.documentElement;
+// Theme toggle (persisted)
 const toggle = document.getElementById('themeToggle');
 const saved = localStorage.getItem('theme');
 if (saved) document.documentElement.setAttribute('data-theme', saved);
-toggle.textContent = document.documentElement.getAttribute('data-theme') === 'light' ? '🌙' : '☀️';
+toggle.textContent = (document.documentElement.getAttribute('data-theme') || 'dark') === 'light' ? '🌙' : '☀️';
 
 toggle.addEventListener('click', () => {
   const current = document.documentElement.getAttribute('data-theme') || 'dark';

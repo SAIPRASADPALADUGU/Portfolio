@@ -15,7 +15,7 @@
 <header class="site-header">
   <div class="wrapper">
     <nav class="nav">
-      <a class="brand" href="#top">SP</a>
+      <a class="brand" href="#top" aria-label="Home">SP</a>
       <div class="links">
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
@@ -24,198 +24,199 @@
         <button class="toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
       </div>
     </nav>
-
-    <!-- HERO -->
-    <section class="hero" id="top">
-      <div class="blob"></div>
-      <div class="hero-inner">
-        <img class="avatar" src="assets/avatar.jpg" alt="Sai Prasad Paladugu headshot" />
-        <h1>Hi, I’m <span class="accent">Sai Prasad Paladugu</span></h1>
-        <p class="subtitle">Backend & Cloud Engineer — I design resilient, high-scale systems using Java, Spring Boot, and AWS.</p>
-        <div class="cta">
-          <a href="Sai_Prasad_Paladugu_Resume.pdf" class="btn primary" target="_blank" rel="noreferrer">Resume</a>
-          <a href="https://www.linkedin.com/in/saiprasadpaladugu" class="btn" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="#contact" class="btn">Contact</a>
-        </div>
-
-        <ul class="hero-chips">
-          <li><img src="assets/aws.svg" alt="">AWS</li>
-          <li><img src="assets/java.svg" alt="">Java</li>
-          <li><img src="assets/spring.svg" alt="">Spring Boot</li>
-          <li><img src="assets/docker.svg" alt="">Docker</li>
-          <li><img src="assets/k8s.svg" alt="">Kubernetes</li>
-        </ul>
-      </div>
-    </section>
   </div>
 </header>
 
+<!-- HERO (shorter now, no scroll blocking) -->
+<section class="hero" id="top" aria-label="Intro">
+  <div class="blob" aria-hidden="true"></div>
+  <div class="wrapper hero-inner">
+    <img class="avatar" src="assets/avatar.jpg" alt="Sai Prasad Paladugu headshot" />
+    <h1>Hi, I’m <span class="accent">Sai Prasad Paladugu</span></h1>
+    <p class="subtitle">Backend & Cloud Engineer — I design resilient, high-scale systems using Java, Spring Boot, and AWS.</p>
+    <div class="cta">
+      <a href="Sai_Prasad_Paladugu_Resume.pdf" class="btn primary" target="_blank" rel="noreferrer">Resume</a>
+      <a href="https://www.linkedin.com/in/saiprasadpaladugu" class="btn" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="#contact" class="btn">Contact</a>
+    </div>
+    <ul class="hero-chips">
+      <li><img src="assets/aws.svg" alt="AWS">AWS</li>
+      <li><img src="assets/java.svg" alt="Java">Java</li>
+      <li><img src="assets/spring.svg" alt="Spring Boot">Spring Boot</li>
+      <li><img src="assets/docker.svg" alt="Docker">Docker</li>
+      <li><img src="assets/k8s.svg" alt="Kubernetes">Kubernetes</li>
+    </ul>
+  </div>
+</section>
+
 <main>
   <!-- PROJECTS -->
-  <section id="projects" class="section wrapper">
-    <div class="section-head">
-      <h2>Selected Work</h2>
-      <p class="muted">A few things I’ve built or led.</p>
-    </div>
+  <section id="projects" class="section">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Featured Projects</h2>
+        <p class="muted">A few things I’ve built or led.</p>
+      </div>
 
-    <div class="grid projects">
-      <!-- Card 1 -->
-      <article class="card proj">
-        <div class="media">
-          <img src="assets/cms-cover.jpg" alt="Case Management System UI" />
-          <div class="overlay">
-            <span>Angular • GraphQL • AWS</span>
+      <div class="grid projects">
+        <!-- Card 1 -->
+        <article class="card proj">
+          <div class="media">
+            <img src="assets/cms-cover.jpg" alt="Case Management System UI" width="1200" height="675"/>
+            <div class="overlay"><span>Angular • GraphQL • AWS</span></div>
           </div>
-        </div>
-        <div class="card-body">
-          <h3>Case Management System</h3>
-          <p>Angular + GraphQL/REST backed by Lambda, API Gateway, and DynamoDB. Powers global immigration & relocation operations (50k+ active cases).</p>
-          <ul class="tags"><li>Angular</li><li>AWS</li><li>DynamoDB</li></ul>
-        </div>
-      </article>
+          <div class="card-body">
+            <h3>Case Management System</h3>
+            <p>Angular + GraphQL/REST backed by Lambda, API Gateway, and DynamoDB. Powers global immigration & relocation operations (50k+ active cases).</p>
+            <ul class="tags"><li>Angular</li><li>AWS</li><li>DynamoDB</li></ul>
+          </div>
+        </article>
 
-      <!-- Card 2 -->
-      <article class="card proj">
-        <div class="media">
-          <img src="assets/workflow-cover.jpg" alt="Workflow orchestration diagram" />
-          <div class="overlay">
-            <span>Java • Step Functions • Serverless</span>
+        <!-- Card 2 -->
+        <article class="card proj">
+          <div class="media">
+            <img src="assets/workflow-cover.jpg" alt="Workflow orchestration diagram" width="1200" height="675"/>
+            <div class="overlay"><span>Java • Step Functions • Serverless</span></div>
           </div>
-        </div>
-        <div class="card-body">
-          <h3>Financial Workflow Orchestration</h3>
-          <p>Step Functions–based workflows with Spring Boot services and serverless integrations to ensure reliable, testable financial ops.</p>
-          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Step Functions</li></ul>
-        </div>
-      </article>
+          <div class="card-body">
+            <h3>Financial Workflow Orchestration</h3>
+            <p>Step Functions–based workflows with Spring Boot services and serverless integrations to ensure reliable, testable financial ops.</p>
+            <ul class="tags"><li>Java</li><li>Spring Boot</li><li>Step Functions</li></ul>
+          </div>
+        </article>
 
-      <!-- Card 3 -->
-      <article class="card proj">
-        <div class="media">
-          <img src="assets/neptune-cover.jpg" alt="Graph database visualization" />
-          <div class="overlay">
-            <span>Neptune • Graph • Lambda</span>
+        <!-- Card 3 -->
+        <article class="card proj">
+          <div class="media">
+            <img src="assets/neptune-cover.jpg" alt="Graph database visualization" width="1200" height="675"/>
+            <div class="overlay"><span>Neptune • Graph • Lambda</span></div>
           </div>
-        </div>
-        <div class="card-body">
-          <h3>Network Device Modeling</h3>
-          <p>Modeled complex device relationships in Amazon Neptune (graph), enabling ~95% faster relationship lookups at scale.</p>
-          <ul class="tags"><li>Neptune</li><li>Graph</li><li>AWS Lambda</li></ul>
-        </div>
-      </article>
+          <div class="card-body">
+            <h3>Network Device Modeling</h3>
+            <p>Modeled complex device relationships in Amazon Neptune (graph), enabling ~95% faster relationship lookups at scale.</p>
+            <ul class="tags"><li>Neptune</li><li>Graph</li><li>AWS Lambda</li></ul>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- EXPERIENCE (Timeline) -->
-  <section id="experience" class="section wrapper">
-    <div class="section-head">
-      <h2>Experience</h2>
-      <p class="muted">Impact at a glance.</p>
-    </div>
-
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="dot"></div>
-        <div class="tl-card">
-          <header class="tl-top">
-            <div class="role">Amazon — Software Engineer</div>
-            <div class="when">Oct 2022 — Present · Dallas, TX</div>
-          </header>
-          <ul>
-            <li>Redesigned DynamoDB access patterns → ~100× lower read capacity cost & ~65% faster queries.</li>
-            <li>Added Redis (ElastiCache) caching → ~70% faster responses.</li>
-            <li>Built Java/Spring Boot services + GraphQL/REST via API Gateway & Lambda.</li>
-            <li>Modeled device relationships in Neptune → ~95% faster lookups.</li>
-            <li>Owned EMR + Airflow ETL for weekly TB-scale refreshes; observability via CloudWatch.</li>
-          </ul>
-        </div>
+  <section id="experience" class="section">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="muted">Impact at a glance.</p>
       </div>
 
-      <div class="tl-item">
-        <div class="dot"></div>
-        <div class="tl-card">
-          <header class="tl-top">
-            <div class="role">Prakya — Software Engineer</div>
-            <div class="when">May 2022 — Aug 2022 · Remote</div>
-          </header>
-          <ul>
-            <li>CI/CD with Jenkins & GitLab; release cycles ~3× faster.</li>
-            <li>Docker automation with Bash/Python; developer throughput +40%.</li>
-            <li>BDD tests with Cucumber and JUnit (85%+ coverage).</li>
-          </ul>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <header class="tl-top">
+              <div class="role">Amazon — Software Engineer</div>
+              <div class="when">Oct 2022 — Present · Dallas, TX</div>
+            </header>
+            <ul>
+              <li>Redesigned DynamoDB access patterns → ~100× lower read capacity cost & ~65% faster queries.</li>
+              <li>Added Redis (ElastiCache) caching → ~70% faster responses.</li>
+              <li>Built Java/Spring Boot services + GraphQL/REST via API Gateway & Lambda.</li>
+              <li>Modeled device relationships in Neptune → ~95% faster lookups.</li>
+              <li>Owned EMR + Airflow ETL for weekly TB-scale refreshes; observability via CloudWatch.</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="tl-item">
-        <div class="dot"></div>
-        <div class="tl-card">
-          <header class="tl-top">
-            <div class="role">Legato Health — Software Engineer</div>
-            <div class="when">Mar 2020 — Aug 2021 · Bangalore, India</div>
-          </header>
-          <ul>
-            <li>Spring Boot services for sensitive health data (100k+ users).</li>
-            <li>Legacy .NET/WPF → microservices + REST (maintainability ↑).</li>
-            <li>Kubernetes/PCF with blue/green and autoscaling.</li>
-          </ul>
+        <div class="tl-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <header class="tl-top">
+              <div class="role">Prakya — Software Engineer</div>
+              <div class="when">May 2022 — Aug 2022 · Remote</div>
+            </header>
+            <ul>
+              <li>CI/CD with Jenkins & GitLab; release cycles ~3× faster.</li>
+              <li>Docker automation with Bash/Python; developer throughput +40%.</li>
+              <li>BDD tests with Cucumber and JUnit (85%+ coverage).</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <header class="tl-top">
+              <div class="role">Legato Health — Software Engineer</div>
+              <div class="when">Mar 2020 — Aug 2021 · Bangalore, India</div>
+            </header>
+            <ul>
+              <li>Spring Boot services for sensitive health data (100k+ users).</li>
+              <li>Legacy .NET/WPF → microservices + REST (maintainability ↑).</li>
+              <li>Kubernetes/PCF with blue/green and autoscaling.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS (visual chips & bars) -->
-  <section id="skills" class="section wrapper">
-    <div class="section-head">
-      <h2>Skills</h2>
-      <p class="muted">My core toolkit.</p>
-    </div>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">My core toolkit.</p>
+      </div>
 
-    <div class="grid skills">
-      <div class="skill-card">
-        <h4>Languages</h4>
-        <p class="chips"><span>Java</span><span>Kotlin</span><span>Python</span><span>C#</span><span>SQL</span></p>
-        <div class="bar"><span style="width:92%"></span></div>
-      </div>
-      <div class="skill-card">
-        <h4>Backend</h4>
-        <p class="chips"><span>Spring Boot</span><span>GraphQL</span><span>REST</span><span>Kafka</span><span>Apache Camel</span></p>
-        <div class="bar"><span style="width:88%"></span></div>
-      </div>
-      <div class="skill-card">
-        <h4>Cloud & Infra</h4>
-        <p class="chips"><span>AWS</span><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span></p>
-        <div class="bar"><span style="width:90%"></span></div>
-      </div>
-      <div class="skill-card">
-        <h4>Datastores</h4>
-        <p class="chips"><span>DynamoDB</span><span>Postgres</span><span>Redis</span><span>Neptune</span><span>MongoDB</span></p>
-        <div class="bar"><span style="width:86%"></span></div>
-      </div>
-      <div class="skill-card">
-        <h4>Testing</h4>
-        <p class="chips"><span>JUnit</span><span>Cucumber</span><span>Cypress</span><span>Selenium</span><span>Postman</span></p>
-        <div class="bar"><span style="width:84%"></span></div>
-      </div>
-      <div class="skill-card">
-        <h4>Frontend</h4>
-        <p class="chips"><span>React</span><span>Angular</span><span>TypeScript</span><span>HTML/CSS</span></p>
-        <div class="bar"><span style="width:78%"></span></div>
+      <div class="grid skills">
+        <div class="skill-card">
+          <h4>Languages</h4>
+          <p class="chips"><span>Java</span><span>Kotlin</span><span>Python</span><span>C#</span><span>SQL</span></p>
+          <div class="bar"><span style="width:92%"></span></div>
+        </div>
+        <div class="skill-card">
+          <h4>Backend</h4>
+          <p class="chips"><span>Spring Boot</span><span>GraphQL</span><span>REST</span><span>Kafka</span><span>Apache Camel</span></p>
+          <div class="bar"><span style="width:88%"></span></div>
+        </div>
+        <div class="skill-card">
+          <h4>Cloud & Infra</h4>
+          <p class="chips"><span>AWS</span><span>Azure</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span></p>
+          <div class="bar"><span style="width:90%"></span></div>
+        </div>
+        <div class="skill-card">
+          <h4>Datastores</h4>
+          <p class="chips"><span>DynamoDB</span><span>Postgres</span><span>Redis</span><span>Neptune</span><span>MongoDB</span></p>
+          <div class="bar"><span style="width:86%"></span></div>
+        </div>
+        <div class="skill-card">
+          <h4>Testing</h4>
+          <p class="chips"><span>JUnit</span><span>Cucumber</span><span>Cypress</span><span>Selenium</span><span>Postman</span></p>
+          <div class="bar"><span style="width:84%"></span></div>
+        </div>
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <p class="chips"><span>React</span><span>Angular</span><span>TypeScript</span><span>HTML/CSS</span></p>
+          <div class="bar"><span style="width:78%"></span></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section wrapper">
-    <div class="section-head">
-      <h2>Contact</h2>
-      <p class="muted">Open to backend, platform, and cloud roles.</p>
+  <section id="contact" class="section">
+    <div class="wrapper">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Open to backend, platform, and cloud roles.</p>
+      </div>
+      <ul class="contact">
+        <li>📧 <a href="mailto:saiprasadpaladugu@gmail.com">saiprasadpaladugu@gmail.com</a></li>
+        <li>📞 <a href="tel:+19407580946">+1 (940) 758-0946</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/saiprasadpaladugu" target="_blank" rel="noreferrer">linkedin.com/in/saiprasadpaladugu</a></li>
+        <li>📍 Dallas, TX</li>
+      </ul>
     </div>
-    <ul class="contact">
-      <li>📧 <a href="mailto:saiprasadpaladugu@gmail.com">saiprasadpaladugu@gmail.com</a></li>
-      <li>📞 <a href="tel:+19407580946">+1 (940) 758-0946</a></li>
-      <li>🔗 <a href="https://www.linkedin.com/in/saiprasadpaladugu" target="_blank" rel="noreferrer">linkedin.com/in/saiprasadpaladugu</a></li>
-      <li>📍 Dallas, TX</li>
-    </ul>
   </section>
 </main>
 
